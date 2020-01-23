@@ -1,35 +1,71 @@
-require 'pry'
+# require 'pry'
 
-class String
+# class String
 
+#   def sentence?
+#     self.end_with?(".")
+#   end
+
+#   def question?
+# self.end_with?("?")
+#   end
+
+#   def exclamation?
+# self.end_with?("!")
+#   end
+
+#   def count_sentences
+#     array = []
+#     array = self.split
+#     counter = 0 
+#     array.each {|x| 
+#     if x.sentence? || x.question? || x.exclamation?
+#     counter += 1 
+#     end
+#     }
+# # array.each do |x|
+# #   if x.sentence? || x.question? || x.exclamation?
+# #     counter += 1 
+  
+#   counter
+
+# end
+
+# end
+
+class String 
   def sentence?
-    self.end_with?(".")
-  end
-
+    self.end_with?"."
+  end 
   def question?
-self.end_with?("?")
+    self.end_with?"?"
   end
-
   def exclamation?
-self.end_with?("!")
+    self.end_with?"!"
   end
-
   def count_sentences
     array = []
+    counter = 0
     array = self.split
-    counter = 0 
-    array.each {|x| 
-    if x.sentence? || x.question? || x.exclamation?
-    counter += 1 
+    array.each do |x|
+      if x.sentence? || x.question? || x.exclaimation?
+        counter += 1
+      end
     end
-    }
-# array.each do |x|
-#   if x.sentence? || x.question? || x.exclamation?
-#     counter += 1 
-  
-  counter
+        
+  end
+end 
 
-end
 
-end
+
+
+
+
+
+
+
+
+
+
+
 
